@@ -1,3 +1,3 @@
 # Blog
 
-This is a pesonal project for a basic blog
+This is a personal project for a basic blog
