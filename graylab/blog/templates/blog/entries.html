@@ -1,0 +1,20 @@
+{% extends "blog/layout.html" %}
+
+{% block title %}
+    Gray Lab | Blog Index
+{% endblock %}
+
+{% block header %}
+    <h1>All Posts</h1>
+{% endblock %}
+
+{% block body %}
+    <div id="blogentries">
+    {% for post in posts %}
+        <div>
+            <div><a href='/blog/entry/{{post.id}}'>{{ post.title }}</a></div>
+            <div>published: {{ post.date_created }}</div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
